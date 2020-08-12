@@ -1,0 +1,12 @@
+import string
+def pangram(str):
+    alphabets="abcdefghijklmnopqrstuvwxyz"
+		for char in alphabets:
+		    if char not in str.lower():
+				    return False
+		return True
+string=input("Enter a string.")
+if(pangram(string)==True):
+    print("yes")
+else:
+    print("no")
